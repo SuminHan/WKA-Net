@@ -1,0 +1,46 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore test results
+coverage/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Ignore environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+__pypackages__/
+
+# Ignore editor/IDE specific files
+.vscode/
+.idea/
+*.swp
+
+# Ignore log and temporary files
+*.log
+*.tmp
+*.temp
+
+# Ignore build directories
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Ignore Python caches
+__pycache__/
+
+prepdata/**
