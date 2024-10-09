@@ -308,7 +308,7 @@ class GMAN(AbstractTrafficStateModel):
         self.output_dim = self.data_feature.get('output_dim', 1)
         self._scaler = self.data_feature.get('scaler')
         self.D = self.data_feature.get('D', 64)  # num_nodes
-        self.T = self.data_feature.get('points_per_hour', 12) * 24  # points_per_data
+        self.T = 24 #self.data_feature.get('points_per_hour', 12) * 24  # points_per_data
         self.add_day_in_week = self.data_feature.get('add_day_in_week', False)
         # init logger
         self._logger = getLogger()

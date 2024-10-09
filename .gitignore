@@ -56,3 +56,7 @@ dataprocess/
 Bigscity-LibCity/raw_data/
 
 WK-extraction/model_checkpoint/
+
+Bigscity-LibCity/libcity/log-reader.ipynb
+Bigscity-LibCity/libcity/slack_test.py
+Bigscity-LibCity/libcity/cache/

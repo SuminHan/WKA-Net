@@ -409,6 +409,7 @@ class DCRNN(AbstractTrafficStateModel, Seq2SeqAttrs):
             batch: a batch of input,
                 batch['X']: shape (batch_size, input_window, num_nodes, input_dim) \n
                 batch['y']: shape (batch_size, output_window, num_nodes, output_dim) \n
+                batch['Z']: shape (batch_size, input_window+output_window, zembedding_dim) \n
             batches_seen: batches seen till now
 
         Returns:
@@ -416,7 +417,10 @@ class DCRNN(AbstractTrafficStateModel, Seq2SeqAttrs):
         """
         inputs = batch['X']
         labels = batch['y']
+
         batch_size, _, num_nodes, input_dim = inputs.shape
+
+
         inputs = inputs.permute(1, 0, 2, 3)  # (input_window, batch_size, num_nodes, input_dim)
         inputs = inputs.view(self.input_window, batch_size, num_nodes * input_dim).to(self.device)
         self._logger.debug("X: {}".format(inputs.size()))  # (input_window, batch_size, num_nodes * input_dim)

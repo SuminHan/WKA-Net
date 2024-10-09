@@ -6,12 +6,12 @@
   "train_rate": 0.7,
   "eval_rate": 0.1,
   "scaler": "none",
-  "load_external": false,
+  "load_external": true,
   "normal_external": false,
   "ext_scaler": "none",
-  "input_window": 12,
-  "output_window": 12,
-  "add_time_in_day": false,
-  "add_day_in_week": false,
+  "input_window": 6,
+  "output_window": 6,
+  "add_time_in_day": true,
+  "add_day_in_week": true,
   "use_row_column": false
 }

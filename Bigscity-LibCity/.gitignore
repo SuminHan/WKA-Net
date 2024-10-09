@@ -10,3 +10,13 @@
 /libcity/log/*
 /libcity/model/*/__pycache__
 /libcity/data/dataset/*/__pycache__
+
+/visualized_data/*
+/libcity_original/tmp/*
+/libcity_original/cache/*
+/libcity_original/__pycache__
+/libcity_original/*/__pycache__
+/libcity_original/data/dataset/__pycache__
+/libcity_original/log/*
+/libcity_original/model/*/__pycache__
+/libcity_original/data/dataset/*/__pycache__

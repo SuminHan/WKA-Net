@@ -26,6 +26,12 @@ from libcity.model.traffic_speed_prediction.TESTAM import TESTAM
 from libcity.model.traffic_speed_prediction.MegaCRN import MegaCRN
 from libcity.model.traffic_speed_prediction.Trafformer import Trafformer
 
+# from libcity.model.traffic_speed_prediction.WKRNN import WKRNN
+from libcity.model.traffic_speed_prediction.WKGTS import WKGTS
+from libcity.model.traffic_speed_prediction.WKDCRNN import WKDCRNN
+from libcity.model.traffic_speed_prediction.WKGMAN import WKGMAN
+from libcity.model.traffic_speed_prediction.WKSTTN import WKSTTN
+
 __all__ = [
     "DCRNN",
     "STGCN",
@@ -54,4 +60,9 @@ __all__ = [
     "TESTAM",
     "MegaCRN",
     "Trafformer",
+    # "WKRNN",
+    "WKGTS",
+    "WKDCRNN",
+    "WKGMAN",
+    "WKSTTN"
 ]

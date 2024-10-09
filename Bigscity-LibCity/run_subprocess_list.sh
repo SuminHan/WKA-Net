@@ -1,23 +1,23 @@
-python run_model_livepop.py --task traffic_state_pred --model GRU      --dataset SEOULN --livepop --stemb
-python run_model_livepop.py --task traffic_state_pred --model GRU      --dataset SEOULN --livepop 
-python run_model_livepop.py --task traffic_state_pred --model GRU      --dataset SEOULN --stemb
-python run_model_livepop.py --task traffic_state_pred --model GRU      --dataset SEOULN 
-python run_model_livepop.py --task traffic_state_pred --model WKDCRNN  --dataset SEOULN --livepop --stemb
-python run_model_livepop.py --task traffic_state_pred --model WKDCRNN  --dataset SEOULN --livepop 
-python run_model_livepop.py --task traffic_state_pred --model WKDCRNN  --dataset SEOULN --stemb
-python run_model_livepop.py --task traffic_state_pred --model WKDCRNN  --dataset SEOULN 
-python run_model_livepop.py --task traffic_state_pred --model WKGTS    --dataset SEOULN --livepop --stemb
-python run_model_livepop.py --task traffic_state_pred --model WKGTS    --dataset SEOULN --livepop 
-python run_model_livepop.py --task traffic_state_pred --model WKGTS    --dataset SEOULN --stemb
-python run_model_livepop.py --task traffic_state_pred --model WKGTS    --dataset SEOULN 
-python run_model_livepop.py --task traffic_state_pred --model WKGMAN   --dataset SEOULN --livepop --stemb
-python run_model_livepop.py --task traffic_state_pred --model WKGMAN   --dataset SEOULN --livepop 
-python run_model_livepop.py --task traffic_state_pred --model WKGMAN   --dataset SEOULN --stemb
-python run_model_livepop.py --task traffic_state_pred --model WKGMAN   --dataset SEOULN 
-python run_model_livepop.py --task traffic_state_pred --model WKSTTN   --dataset SEOULN --livepop --stemb
-python run_model_livepop.py --task traffic_state_pred --model WKSTTN   --dataset SEOULN --livepop 
-python run_model_livepop.py --task traffic_state_pred --model WKSTTN   --dataset SEOULN --stemb
-python run_model_livepop.py --task traffic_state_pred --model WKSTTN   --dataset SEOULN 
+python run_model_livepop.py --task traffic_state_pred --model GRU      --dataset SSPD --livepop --stemb
+python run_model_livepop.py --task traffic_state_pred --model GRU      --dataset SSPD --livepop 
+python run_model_livepop.py --task traffic_state_pred --model GRU      --dataset SSPD --stemb
+python run_model_livepop.py --task traffic_state_pred --model GRU      --dataset SSPD 
+python run_model_livepop.py --task traffic_state_pred --model WKDCRNN  --dataset SSPD --livepop --stemb
+python run_model_livepop.py --task traffic_state_pred --model WKDCRNN  --dataset SSPD --livepop 
+python run_model_livepop.py --task traffic_state_pred --model WKDCRNN  --dataset SSPD --stemb
+python run_model_livepop.py --task traffic_state_pred --model WKDCRNN  --dataset SSPD 
+python run_model_livepop.py --task traffic_state_pred --model WKGTS    --dataset SSPD --livepop --stemb
+python run_model_livepop.py --task traffic_state_pred --model WKGTS    --dataset SSPD --livepop 
+python run_model_livepop.py --task traffic_state_pred --model WKGTS    --dataset SSPD --stemb
+python run_model_livepop.py --task traffic_state_pred --model WKGTS    --dataset SSPD 
+python run_model_livepop.py --task traffic_state_pred --model WKGMAN   --dataset SSPD --livepop --stemb
+python run_model_livepop.py --task traffic_state_pred --model WKGMAN   --dataset SSPD --livepop 
+python run_model_livepop.py --task traffic_state_pred --model WKGMAN   --dataset SSPD --stemb
+python run_model_livepop.py --task traffic_state_pred --model WKGMAN   --dataset SSPD 
+python run_model_livepop.py --task traffic_state_pred --model WKSTTN   --dataset SSPD --livepop --stemb
+python run_model_livepop.py --task traffic_state_pred --model WKSTTN   --dataset SSPD --livepop 
+python run_model_livepop.py --task traffic_state_pred --model WKSTTN   --dataset SSPD --stemb
+python run_model_livepop.py --task traffic_state_pred --model WKSTTN   --dataset SSPD 
 
 # python run_model_livepop.py --task traffic_state_pred --model GRU      --dataset SEOUL --livepop --stemb
 # python run_model_livepop.py --task traffic_state_pred --model GRU      --dataset SEOUL --livepop 

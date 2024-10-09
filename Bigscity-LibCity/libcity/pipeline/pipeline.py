@@ -12,6 +12,8 @@ from libcity.config import ConfigParser
 from libcity.data import get_dataset
 from libcity.utils import get_executor, get_model, get_logger, ensure_dir, set_random_seed
 
+from libcity.slack_test import slackBot
+
 
 def run_model(task=None, model_name=None, dataset_name=None, config_file=None,
               saved_model=True, train=True, other_args=None):
@@ -60,7 +62,10 @@ def run_model(task=None, model_name=None, dataset_name=None, config_file=None,
     else:
         executor.load_model(model_cache_file)
     # 评估，评估结果将会放在 cache/evaluate_cache 下
-    executor.evaluate(test_data)
+    test_result = executor.evaluate(test_data)
+
+    slackBot.print(dataset_name + '\t' + model_name + '\t' + f"LivePop({other_args['livepop']})" + '\t' + f"STEMB({other_args['stemb']})"\
+                    '\n' + str(test_result))
 
 
 def parse_search_space(space_file):
@@ -139,7 +144,9 @@ def hyper_parameter(task=None, model_name=None, dataset_name=None, config_file=N
     # exp_id
     exp_id = experiment_config.get('exp_id', None)
     if exp_id is None:
-        exp_id = int(random.SystemRandom().random() * 100000)
+        import time
+        # exp_id = int(random.SystemRandom().random() * 100000)
+        exp_id = int(time.time())
         experiment_config['exp_id'] = exp_id
     # logger
     logger = get_logger(experiment_config)

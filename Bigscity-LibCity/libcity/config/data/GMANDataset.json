@@ -1,6 +1,6 @@
 {
   "batch_size": 4,
-  "cache_dataset": true,
+  "cache_dataset": false,
   "num_workers": 0,
   "pad_with_last_sample": true,
   "train_rate": 0.7,
@@ -9,9 +9,9 @@
   "load_external": true,
   "normal_external": false,
   "ext_scaler": "none",
-  "input_window": 12,
-  "output_window": 12,
+  "input_window": 6,
+  "output_window": 6,
   "add_time_in_day": true,
-  "add_day_in_week": false,
+  "add_day_in_week": true,
   "D": 64
 }
