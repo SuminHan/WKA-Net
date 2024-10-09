@@ -49,3 +49,8 @@ prepdata/
 dataprocess/seoul-original/
 dataprocess/seouldata/
 dataprocess/
+
+
+.ipynb_checkpoints
+
+Bigscity-LibCity/raw_data/
