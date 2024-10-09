@@ -490,7 +490,7 @@ class TrafficStateDataset(AbstractDataset):
             return a[arr], b[arr], c[arr]
 
         x_trval, y_trval, z_trval = x[: num_train + num_val], y[: num_train + num_val], z[: num_train + num_val]
-        # x_trval, y_trval, z_trval = shuffle_along_axis(x_trval, y_trval, z_trval, axis=0)
+        x_trval, y_trval, z_trval = shuffle_along_axis(x_trval, y_trval, z_trval, axis=0)
 
         x_train, y_train, z_train = x_trval[: num_train ], y_trval[: num_train ], z_trval[: num_train ]
         x_val, y_val, z_val       = x_trval[num_train : ], y_trval[num_train : ], z_trval[num_train : ]
