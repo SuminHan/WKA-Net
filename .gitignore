@@ -54,3 +54,5 @@ dataprocess/
 .ipynb_checkpoints
 
 Bigscity-LibCity/raw_data/
+
+WK-extraction/model_checkpoint/
